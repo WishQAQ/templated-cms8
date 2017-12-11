@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<link rel="stylesheet" type="text/css" href="/skin/css/style.css">
+<script type="text/javascript" src="/skin/js/jquery.js"></script>
+<script type="text/javascript" src="/skin/js/web.js"></script>
+</head>
+<body>
+<!--top start--> 
+{dede:include filename="head.htm"/} 
+<!--top end--> 
+<!--content-->
+<div class="bgcontent">
+  <div class="mauto content pt15">
+    <div class="right fr">
+      <div class="tcap">
+        <div class="fr address"><span>当前位置：</span> {dede:field name='position'/} </div>
+        <div class="case"><span>{dede:field name='typename'/}</span><span class="eng">/Announcement</span></div>
+      </div>
+      <div class="p20">
+        <div class="casediv">
+          <ul class="news_ul">
+            {dede:list pagesize='12'}
+            <li><span class="fr">[field:pubdate function="MyDate('Y-m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:title/]">·[field:title/]</a></li>
+            {/dede:list}
+          </ul>
+        </div>
+        <div class="page"> {dede:pagelist listitem="index,end,pre,next,pageno"/} </div>
+      </div>
+      <div class="bg2"></div>
+    </div>
+    <div class="left fl bg">
+      <div class="caption">
+        <p class="eng fw">NEWS</p>
+        <p class="chh fw">{dede:field name='typeid' function="GetTopTypename(@me)" /}</p>
+      </div>
+      <ul class="list">
+        {dede:channel type='son' currentstyle="
+        <li class='current'><a href='~typelink~' class='thisclass'>~typename~</a></li>
+        "}
+        <li><a href="[field:typeurl/]" title="[field:typename/]" >[field:typename/]</a> </li>
+        {/dede:channel}
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!--content--> 
+<!--foot start--> 
+{dede:include filename="footer.htm"/} 
+<!--foot end-->
+</body>
+</html>

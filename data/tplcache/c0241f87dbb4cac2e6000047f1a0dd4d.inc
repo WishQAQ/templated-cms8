@@ -1,0 +1,1 @@
+<li><a href="[field:typelink/]">[field:typename/]<span>News</span></a></li>

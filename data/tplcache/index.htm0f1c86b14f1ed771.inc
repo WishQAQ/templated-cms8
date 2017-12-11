@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("global","",254,280);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",324,354);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",391,418);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",713,748);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("type"," <a href=\"[field:typelink/]\" title=\"[field:typename/]\"><img src=\"/skin/images/img1.jpg\" width=\"167\" height=\"80\"></a> ",1133,1284);
+$z[4][4]['typeid']="6";
+$z[5]=Array("type"," <a href=\"[field:typelink/]\" title=\"[field:typename/]\"><img src=\"/skin/images/img2.jpg\" width=\"167\" height=\"80\"></a> ",1534,1685);
+$z[5][4]['typeid']="7";
+$z[6]=Array("type"," <a href=\"[field:typelink/]\" title=\"[field:typename/]\"><img src=\"/skin/images/img3.jpg\" width=\"167\" height=\"80\"></a> ",1934,2085);
+$z[6][4]['typeid']="8";
+$z[7]=Array("arclist","\r\n          <li><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]...</a></li>\r\n          ",2158,2320);
+$z[7][4]['row']="5";
+$z[7][4]['titlelen']="60";
+$z[7][4]['typeid']="9";
+$z[8]=Array("arclist","\r\n            <li>\r\n              <div class=\"imgdiv\"><a href=\"[field:arcurl/]\"><img src=\"[field:picname/]\" alt=\"[field:title/]\"  width=\"157\" height=\"96\"></a>\r\n                <div class=\"fliter\"></div>\r\n              </div>\r\n              <p><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></p>\r\n            </li>\r\n            ",2675,3081);
+$z[8][4]['row']="10";
+$z[8][4]['titlelen']="32";
+$z[8][4]['typeid']="5";
+$z[9]=Array("type"," <a href=\"[field:typelink/]\" class=\"fr\" title=\"[field:typename/]\">>>更多</a>",3271,3383);
+$z[9][4]['typeid']="1";
+$z[10]=Array("sql"," \r\n            [field:content  function='cn_substr(html2text(@me),400)'/]\r\n            ",3532,3690);
+$z[10][4]['sql']="Select content from dede_arctype where id=2";
+$z[11]=Array("type","<a href=\"[field:typelink/]\" class=\"fr\" title=\"[field:typename/]\">>>更多</a>",3787,3898);
+$z[11][4]['typeid']="9";
+$z[12]=Array("arclist","\r\n            <li><span class=\"fr color1\">[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span><a href=\"[field:arcurl/]\" title=\"[field:title/]\">·[field:title/]...</a></li>\r\n            ",4061,4306);
+$z[12][4]['row']="6";
+$z[12][4]['titlelen']="32";
+$z[12][4]['typeid']="9";
+$z[13]=Array("type"," <a href=\"[field:typelink/]\" class=\"fr\" title=\"[field:typename/]\">>>更多</a>",4409,4522);
+$z[13][4]['typeid']="12";
+$z[14]=Array("arclist","\r\n            <li><span class=\"fr color1\">[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span><a href=\"[field:arcurl/]\" title=\"[field:title/]\">·[field:title/]...</a></li>\r\n            ",4685,4931);
+$z[14][4]['row']="6";
+$z[14][4]['titlelen']="32";
+$z[14][4]['typeid']="12";
+$z[15]=Array("include","",5047,5084);
+$z[15][4]['filename']="footer.htm";
+
+?>
